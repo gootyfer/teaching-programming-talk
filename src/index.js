@@ -31,13 +31,14 @@ export class Teacher extends Person{
     };
 
     //1. Learner in the middle
-    this.exploredGroupNeedsBeforeTheCourse = true;
+    this.exploreGroupNeedsBeforeTheCourse = true;
     this.adaptContentToTheGroup = true;
+    this.defineLearningObjectives = true;
 
     //2. Methodology
     this.talkingTime = 19;
     this.attitude = 'humble';
-    this.methodology = ['practical exercises', 'flipped classroom'];
+    this.methodology = ['practical exercises', 'flipped classroom', 'project based learning'];
     this.practiceTime = 60;
 
     //3. Role
@@ -82,11 +83,11 @@ export class Teacher extends Person{
 
   }
 
-  executeGroupActivities(){
+  doGroupActivities(){
     this.groupOfLearners.motivation += 10;
   }
 
-  executeAssessment(){
+  doAssessment(){
     this.groupOfLearners.awareness = 'AWARE';
   }
 }
